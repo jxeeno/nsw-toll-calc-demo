@@ -1,0 +1,29 @@
+.text-small {
+  font-size: 88%
+}
+
+.text-xsmall {
+  font-size: 72%
+}
+
+.App {
+  flex-direction: column;
+}
+
+.sidebar {
+  height: 50%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .App {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 400px;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
