@@ -4,7 +4,7 @@ This is a toll calculator demo app using the TfNSW Toll Calculator V2 API, built
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is deployed on Netlify.
 
-API calls are router through a CORS proxy hosted on Heroku, based on [cors-anywhere](https://github.com/Rob--W/cors-anywhere).
+Since the TfNSW API Gateway doesn't support CORS requests, API calls are routed through a CORS proxy hosted on Heroku, based on [cors-anywhere](https://github.com/Rob--W/cors-anywhere).
 
 ### `yarn start`
 
