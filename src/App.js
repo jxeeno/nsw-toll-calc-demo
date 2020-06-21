@@ -33,6 +33,7 @@ const App = () => {
     }else if(!destination){
       setDestination(clickPoint)
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [clickPoint]);
 
   useEffect(() => {
@@ -143,7 +144,7 @@ const App = () => {
                       <b>{data.summary}</b>
                     </div>
                     <div>
-                      {data.minChargeInCents == data.maxChargeInCents ? <span className="text-muted text-small">
+                      {data.minChargeInCents === data.maxChargeInCents ? <span className="text-muted text-small">
                         ${(data.minChargeInCents/100).toFixed(2)}
                       </span> : <span className="text-muted text-small">
                         ${(data.minChargeInCents/100).toFixed(2)} - ${(data.maxChargeInCents/100).toFixed(2)}
